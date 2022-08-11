@@ -1,0 +1,17 @@
+h1{
+    background-color: red;
+}
+
+.azul{
+    margin-top: 50px;
+    background-color: blue;
+}
+
+#verde{
+    background-color: lightpink;
+	}
+
+.tabela{
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -1,0 +1,48 @@
+p:not(.meio) {
+    color: lightcoral;
+}
+
+input:checked + p {
+    background: lightblue;
+}
+
+input:not(:checked) + p {
+    background:powderblue;
+}
+
+ul li:nth-child(odd) {
+    background-color: lightcoral;
+}
+ul li:nth-child(even) {
+    background-color: lightgoldenrodyellow;
+}
+ul li:nth-child(3n) {
+    background-color: lightblue;
+}
+ul li:nth-child(3n+4) {
+    background-color: lightgrey;
+}
+
+p::first-letter {
+    font-size:50px;
+
+}
+p2 ::first-line {
+    background:lightslategray;
+}
+
+p::selection {
+    background: lightyellow;
+}
+
+/*
+ID      Classes, atributos e pseudo-classes     Elementos e pseudo-elementos    
+1       0                                       0
+0       1                                       0   
+1       1                                       0
+
+especificidade
+empate
+style
+!important ****
+*/
