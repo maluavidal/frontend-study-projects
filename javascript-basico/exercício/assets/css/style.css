@@ -22,24 +22,59 @@ body {
     margin: 50px auto;
     background: #fff;
     padding: 20px;
+    border-radius: 15px;
 }
 
 .tabela {
-    margin-left:auto;
-    margin-right: auto;
-    border-collapse: collapse;
+    display: flex;
+    width: 100%;
+    text-align: left;
+    align-items: center;
+    margin-bottom: 30px;
+    justify-content: flex-start;
 }
 
-tbody {
-    font-weight: 20;
+.col {
+    display: flex; 
+    flex-direction: column;
 }
 
-table, table thead, table tr, table th {
+form input, form label, form button {
+    display: block;
+    width: 100%;
+}
+
+form button {
+    margin-top: 20px;
+    height: 30px;
+    background: var(--primary-color) 5px;
+    color: black;
+    border-radius: 7px;
     font-weight: bold;
 }
 
-table td, table th {
-    padding: 5px;
+form button:hover {
+    background: var(--primary-color-darker);
+    color: #fff;
+    font-weight: 500;
 }
 
+form button:active {
+    background: black;
+}
 
+.mr-96 {
+    margin-right: 96px;
+}
+
+#resposta {
+    margin-top: 10px;
+}
+
+.green-background {
+    background: greenyellow;
+}
+
+.red-background {
+    background: red;
+}

@@ -10,50 +10,42 @@
 <body>
     <section class="container">
 
-        <h1>Tabela IMC</h1>
         <div>
-        <div style="display: flex; width: 100%; align-items: center; justify-content: space-around;">
-            <div style="display: flex; flex-direction: column;">
-                <h3>IMC</h3>
-                <span>1</span>
-                <span>2</span>
-                <span>3</span>
-                <span>4</span>
-                <span>5</span>
-                <span>6</span>
-            </div>
-            <div style="display: flex; flex-direction: column;">
-                <h3>Resultado</h3>
-                <span>1</span>
-                <span>2</span>
-                <span>3</span>
-                <span>4</span>
-                <span>5</span>
-                <span>6</span>
+            <h1>Tabela IMC</h1>
+            <div class="tabela">
+                <div class="col mr-96">
+                    <h3>IMC</h3>
+                    <span>Menos do que 18.5</span>
+                    <span>Entre 18.5 e 24.9</span>
+                    <span>Entre 25 e 29.9</span>
+                    <span>Entre 30 e 34.9</span>
+                    <span>Entre 35 e 39.9</span>
+                    <span>Mais do que 40</span>
+                </div>
+                <div class="col">
+                    <h3>Resultado</h3>
+                    <span>Abaixo do peso</span>
+                    <span>Peso normal</span>
+                    <span>Sobrepeso</span>
+                    <span>Obesidade grau 1</span>
+                    <span>Obesidade grau 2</span>
+                    <span>Obesidade grau 3</span>
+                </div>
             </div>
         </div>
-        <table class="tabela">
-            <thead>
-                <tr>
-                    <th>IMC</th>
-                    <th>Resultado</th>
-                </tr>
-            </thead>
+        <h1>Calcule seu IMC</h1>
+        <form action="" id="form">
+            <label for="peso">Peso (em kg):</label>
+            <input type="number" id="peso"></label>
 
-            <tbody>
-                <td>Menos do que 18.5</td>
-            
-            </tbody>
-        </table>
-        </div>
-        <form action="">
-            <label for="peso">Peso:</label>
-            <input type="text" id="peso"></label>
+            <label for="altura">Altura (em m):</label>
+            <input type="number" id="altura"></label>
 
-            <label for="altura">Altura:</label>
-            <input type="text" id="altura"></label>
+            <button onclick="calcular()" id="botao">Calcular</button>
 
-            <button>Calcular</button>
+            <div id="resposta">
+
+            </div>
         </form>
     </section>
     </form>
