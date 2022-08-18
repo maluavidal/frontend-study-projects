@@ -12,15 +12,23 @@ button.addEventListener('click' , e => e.preventDefault())
 function calcular() {
     const pesoValue = peso.value;
     const alturaValue = altura.value;
-
     let imc = pesoValue / (alturaValue*alturaValue);
 
+    imc = imc.toFixed(2);
+
+    if (!pesoValue.length || !alturaValue.length){
+        alert("Dados inválidos");
+           return
+       }
+  
     if (imc > 18.5 && imc < 24.9) {
         resposta.classList.add('green-background');
     } else {
         resposta.classList.add('red-background');
     };
-    
+
+    resposta.innerHTML = '';
+
     if(imc < 18.5) {
         const node = document.createTextNode(`Seu IMC é ${imc} (Abaixo do peso)`);
         resposta.appendChild(node);
@@ -43,6 +51,8 @@ function calcular() {
 }
 
 
+
+ 
 
 
 

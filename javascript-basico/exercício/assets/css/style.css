@@ -53,6 +53,13 @@ form button {
     font-weight: bold;
 }
 
+#reset {
+    width: 60px;
+    align-content: center;
+    margin-top: 3px;
+    float: right;
+}
+
 form button:hover {
     background: var(--primary-color-darker);
     color: #fff;
