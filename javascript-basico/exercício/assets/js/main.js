@@ -1,7 +1,7 @@
 const peso = document.getElementById('peso');
 const altura = document.getElementById('altura');
-const button = document.getElementById('botao')
-const resposta = document.getElementById('resposta')
+const button = document.getElementById('botao');
+const resposta = document.getElementById('resposta');
 
 // button.addEventListener('click' , function(event) {
 //     event.preventDefault();
@@ -35,13 +35,13 @@ function calcular() {
     } else if (imc > 18.5 && imc < 25) {
         const node = document.createTextNode(`Seu IMC é ${imc} (Peso normal)`);
         resposta.appendChild(node);
-    } else if (imc === 25 && imc <= 29.9) {
+    } else if (imc >= 25 && imc <= 29.9) {
         const node = document.createTextNode(`Seu IMC é ${imc} (Sobrepeso)`);
         resposta.appendChild(node);    
-    } else if (imc === 30 && imc <= 34.9) {
+    } else if (imc >= 30 && imc <= 34.9) {
         const node = document.createTextNode(`Seu IMC é ${imc} (Obesidade grau 1)`);
         resposta.appendChild(node);
-    } else if (imc === 35 && imc <= 39.9) {
+    } else if (imc >= 35 && imc <= 39.9) {
         const node = document.createTextNode(`Seu IMC é ${imc} (Obesidade grau 2)`);
         resposta.appendChild(node);    
     } else if (imc > 40) { 
