@@ -21,9 +21,19 @@ function random(min, max) {
 
 const min = 1;
 const max = 50;
-let rand = random(1, 50);
+let rand = 10;
+// let rand = random(1, 50);
 
 while (rand !== 10) {
     rand = random(min, max);
     console.log(rand);
 }
+
+ console.log('######');
+
+do {
+    rand = random(min, max); // primeiro, atualiza-se o valor
+    console.log(rand); // depois de executar...
+} while(rand !== 10); // checou-se a condição
+
+// do while sempre executa pelo menos uma vez 
