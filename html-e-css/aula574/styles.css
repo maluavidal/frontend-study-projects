@@ -1,0 +1,9 @@
+.join {
+    width: 10em;
+    height: 5ex;
+    background-color: lightpink;
+    border: 2 px solid deeppink;
+}
+.join:hover {
+    background-color: coral;
+}

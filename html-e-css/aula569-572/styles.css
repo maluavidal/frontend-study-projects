@@ -1,0 +1,18 @@
+* {
+    margin:0;
+    padding: 0;;
+}
+
+
+
+.pai h1+p {
+    color: pink;
+}
+
+.pai .um~.dois {
+    color: lightblue;
+}
+
+[meu-atributo~="valor"] {
+    color: lightcoral;
+}

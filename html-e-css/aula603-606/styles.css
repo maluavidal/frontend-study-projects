@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row nowrap;
+    background: lightblue;
+    height: 800px;
+}
+
+.flex-item {
+    flex: 1 1 320px;
+    background:deepskyblue;
+}
+
+.flex-item:nth-child(2) {
+    flex: 2 1 320px;
+    background: lightcoral;
+    order: 1;
+}
