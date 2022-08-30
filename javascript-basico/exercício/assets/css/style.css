@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+:root{ 
+    --primary-color:rgb(168, 223, 252);
+    --primary-color-darker:rgb(37, 125, 173);
+}
+
+*{
+    box-sizing: border-box;
+    outline: 0;
+    font-family: 'Open sans', sans-serif;
+}
+
+body {
+    margin:0;
+    padding: 0;
+    background: var(--primary-color);
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.tabela {
+    display: flex;
+    width: 100%;
+    text-align: left;
+    align-items: center;
+    margin-bottom: 30px;
+    justify-content: flex-start;
+}
+
+.col {
+    display: flex; 
+    flex-direction: column;
+}
+
+form input, form label, form button {
+    display: block;
+    width: 100%;
+}
+
+form button {
+    margin-top: 20px;
+    height: 30px;
+    background: var(--primary-color) 5px;
+    color: black;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+#reset {
+    width: 60px;
+    align-content: center;
+    margin-top: 3px;
+    float: right;
+}
+
+form button:hover {
+    background: var(--primary-color-darker);
+    color: #fff;
+    font-weight: 500;
+}
+
+form button:active {
+    background: black;
+}
+
+.mr-96 {
+    margin-right: 96px;
+}
+
+#resposta {
+    margin-top: 10px;
+}
+
+.green-background {
+    background: greenyellow;
+}
+
+.red-background {
+    background: red;
+}
