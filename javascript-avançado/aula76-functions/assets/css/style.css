@@ -30,7 +30,11 @@ body {
 .display {
     font-size: 2em;
     width: 100%;
-    text-align: center;
+    text-align: right;
+}
+
+.display:focus { 
+    border: 2px solid
 }
 
 .btn {
